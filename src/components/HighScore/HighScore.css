@@ -1,0 +1,22 @@
+.game-section{
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+h1{
+    margin: 0;
+    padding-top: 20px;
+}
+
+.options{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.option{
+    background-color: black;
+    width: 60px;
+    height: 80px;
+}

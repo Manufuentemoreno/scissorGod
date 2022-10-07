@@ -1,0 +1,231 @@
+.title{
+  font-family: "Hammersmith One";
+  color: #FFD700;
+  text-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+  font-size: 64px;
+  padding-bottom: 40px;
+  margin: 10px;
+  line-height: 40px;
+  text-align: center;
+  position: absolute;
+  top: 10px;
+  width: 340px;
+  transition: all 800ms ease-in-out;
+}
+
+.title-top{
+  font-size: 39px;
+  line-height: 24px;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  width: 154px;
+  z-index: 10;
+  transition: all 800ms ease-in-out;
+}
+
+@keyframes title-to-top {
+  from{
+    font-family: "Hammersmith One";
+    color: #FFD700;
+    text-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+    font-size: 64px;
+    padding-bottom: 40px;
+    margin: 10px;
+    line-height: 40px;
+    text-align: center;
+    width: 226px;
+    position: absolute;
+    top: 10px;
+  }
+
+  to{
+    font-size: 39px;
+    line-height: 24px;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    width: 154px;
+    z-index: 10;
+  }
+}
+
+.App-main{
+    min-height: 80vh;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    position: relative;
+    overflow: clip;
+  }
+  
+  .button-start{
+    width: 150px;
+    height: 70px;
+  
+    background: black;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+  
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 35px;
+    border: none;
+    color: #ffa156;
+    margin-bottom: 5%;
+    position: absolute;
+    bottom: 5px;
+  }
+  
+  .button-start:hover{
+    transition: all 300ms;
+    background: #E98383;
+    box-shadow: 0px 0px 22px white;
+    color: #FFFFFF;
+  }
+
+  .play{
+    animation: fadeOut 500ms forwards;
+  }
+
+  .App-logo {
+    width: 80%;
+    filter: drop-shadow(0px 4px 12px rgba(0, 0, 0, 0.25));
+    align-self: center;
+    z-index: 0;
+    position: absolute;
+    transition: all 500ms ease-in-out;
+  }
+
+
+  .App-logo-back{
+    position: absolute;
+    filter: blur(3px);
+    opacity: 0.5;
+    width: 146%;
+    left: 40px;
+    transition: all ease-in-out 800ms;
+    animation: moveImageBack 800ms forwards;
+  }
+
+
+.options-game{
+  z-index: 10;
+  position: absolute;
+  bottom: 20px;
+  justify-content: space-between;
+  display: flex;
+  width: 80%;
+  align-items: end;
+}
+
+@keyframes out {
+  from{
+    bottom: 20px;
+    opacity: 1;
+  }
+  to{
+    bottom: -10px;
+    opacity: 0;
+  }
+}
+
+.options-game-out{
+  animation: out 300ms forwards;
+}
+
+.option-game{
+  width: 80px;
+  height: 80px;
+  padding: 10px;
+  background: #ffffff50;
+  border: none;
+  border-radius: 10px;
+  -webkit-box-shadow: -1px 5px 19px -4px rgba(0,0,0,0.62);
+  -moz-box-shadow: -1px 5px 19px -4px rgba(0,0,0,0.62);
+  box-shadow: -1px 5px 19px -4px rgba(0,0,0,0.62);
+}
+
+.option-game:hover{
+  background: #FFFFFF7A;
+  transition: 300ms;
+  height: 90px;
+  width: 85px;
+}
+
+.section-play{
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  position: relative;
+  animation: fadeIn 1.5s forwards;
+}
+
+.draw{
+  height: 314px;
+  width: 282px;
+  background-color: black;
+  position: absolute;
+  top: 141px;
+}
+
+.results{
+  z-index: 20;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.data-results{
+  background-color: #00000069;
+  border-radius: 15px;
+  width: 70%;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+/* Animations */
+
+
+@keyframes fadeOut {
+  from{
+    opacity: 1;
+  }
+  to{
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+@keyframes moveImageBack {
+  0%{
+    width: 80%;
+    left: 40px;
+  }
+
+  50%{
+    width: 146%;
+  }
+
+  100%{
+    width: 146%;
+    left: 100px;
+  }
+}
